@@ -2,19 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Boss.az
 {
-    class Program
+    class UserNotFoundException:ApplicationException
     {
-
-        static void Main(string[] args)
+        public override string Message { get;}
+        public UserNotFoundException()
         {
-            SystemManagement manager = new SystemManagement();
 
-            manager.Start();
         }
     }
 }

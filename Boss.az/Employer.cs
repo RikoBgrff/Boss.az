@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Boss.az
 {
-    class Employer:User
+    class Employer : User
     {
-
+        public Vacancies Vacanciess { get; set; }
     }
 }
